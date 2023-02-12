@@ -1,0 +1,18 @@
+spring:
+  mail:
+    imap:
+      host: imap.gmail.com
+      port: 993
+      username: kaijiang0411@gmail.com
+      password: gyanzqsiyvhwxdvm
+    smtp:
+      host: smtp.gmail.com
+      port: 587
+      username: kaijiang0411@gmail.com
+      password: gyanzqsiyvhwxdvm
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
