@@ -187,3 +187,7 @@ export const clients = [
     logo: dropbox,
   },
 ];
+
+export const emailTemplates = { 
+
+}
