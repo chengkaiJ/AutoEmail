@@ -23,8 +23,6 @@ public class SendEmailServiceImpl implements SendEmailService{
 
     private final JavaMailSender javaMailSender;
 
-    private final String gmailAccountPassword = "JJCk030511@!";
-
     @Autowired
     public SendEmailServiceImpl(Environment env, JavaMailSender javaMailSender) {
         this.env = env;

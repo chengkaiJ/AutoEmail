@@ -27,6 +27,7 @@ const Navbar = () => {
 function CustomLink({ to, id, index, children, ...props}) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path : resolvedPath.pathname, end : true})
+  console.log('id for li is :', id)
   return (
     <React.Fragment key={id}>
       <li className={`font-poppins font-normal  cursor-pointer text-1xl ${styles.navText} mr-10 ${index == navLinks.length - 1 ? 'mr-0' : 'mr-10'} ${ isActive === to ? "active" : ""} text-white`}>

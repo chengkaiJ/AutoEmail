@@ -21,8 +21,11 @@ public class SendEmailController {
 
 
     @PostMapping(value = "/send")
-    public void sendEmail(Email2Send email2Send) {
+    public String sendEmail(Email2Send email2Send) {
+
         sendEmailService.sendEmail(email2Send);
+        System.out.println("send email successfully");
+        return "success";
     }
 
     @PostMapping(value = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
