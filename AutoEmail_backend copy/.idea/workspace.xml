@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d413f953-351a-4551-b251-ac0ca0f73d60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AutoEmail_backend/FICA Consent_form_V5_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoEmail_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoEmail_backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoEmail_backend/src/main/java/com/AutoEmail_backend/controller/SendEmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoEmail_backend/src/main/java/com/AutoEmail_backend/controller/SendEmailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoEmail_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoEmail_backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoEmail_frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoEmail_frontend/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoEmail_frontend/src/components/SendEmail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoEmail_frontend/src/components/SendEmail.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
+  <component name="ProjectId" id="2LUIutLHkMIbG9PyXeEsyjbQVOS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.restful_example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RestfulExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="AutoEmail_backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.AutoEmail_backend.RestfulExampleApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d413f953-351a-4551-b251-ac0ca0f73d60" name="Changes" comment="" />
+      <created>1675919461213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675919461213</updated>
+      <workItem from="1675919463797" duration="11346000" />
+      <workItem from="1675976207154" duration="23347000" />
+      <workItem from="1676188029969" duration="78000" />
+      <workItem from="1676188182703" duration="931000" />
+      <workItem from="1676189206277" duration="206000" />
+      <workItem from="1676189487467" duration="350000" />
+      <workItem from="1676313383674" duration="1016000" />
+      <workItem from="1676314735272" duration="5497000" />
+      <workItem from="1676528865205" duration="11204000" />
+      <workItem from="1677208957268" duration="2280000" />
+      <workItem from="1677213221767" duration="364000" />
+      <workItem from="1677213960321" duration="608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.tomcat.util.http.fileupload.FileUploadException" package="org.apache.tomcat.util.http.fileupload" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/AutoEmail_backend/controller/SendEmailController.java</url>
+          <line>24</line>
+          <properties class="com.AutoEmail_backend.controller.SendEmailController" method="sendEmail">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/AutoEmail_backend/controller/SendEmailController.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.restful_example.model.Email2Send" memberName="file" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

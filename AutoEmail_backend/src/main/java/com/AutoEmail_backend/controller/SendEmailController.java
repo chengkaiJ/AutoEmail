@@ -3,12 +3,13 @@ package com.AutoEmail_backend.controller;
 
 import com.AutoEmail_backend.model.Email2Send;
 import com.AutoEmail_backend.service.SendEmailService;
-import jakarta.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:5173")
+import javax.mail.MessagingException;
+
+@CrossOrigin(origins = {"http://localhost:5173", "chrome-extension://ljffaingldlgkmiodcnjdchdefbhpikf" })
 @RestController
 public class SendEmailController {
 
@@ -19,9 +20,15 @@ public class SendEmailController {
         this.sendEmailService = sendEmailService;
     }
 
+    @GetMapping(value = "/get")
+    public void testGet() {
+        System.out.println("get request received");
+    }
+
 
     @PostMapping(value = "/send")
     public String sendEmail(Email2Send email2Send) {
+        System.out.println("received request");
 
         sendEmailService.sendEmail(email2Send);
         System.out.println("send email successfully");
