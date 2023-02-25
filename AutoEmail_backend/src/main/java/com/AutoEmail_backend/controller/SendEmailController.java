@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.mail.MessagingException;
 
-@CrossOrigin(origins = {"http://localhost:5173", "chrome-extension://ljffaingldlgkmiodcnjdchdefbhpikf" })
+@CrossOrigin
 @RestController
 public class SendEmailController {
 
