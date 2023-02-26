@@ -2,9 +2,10 @@ import React, { useState, useEffect} from 'react';
 
 import MailMessage from './MailMessage';
 
+
 function SendEmail() {
   const [values, setValues] = useState({
-    user_name: '',
+    user_name: 'Chengkai Jjiang',
     recruiter_name: '',
     company_name: '',
     recruiter_email: '',
@@ -14,20 +15,66 @@ function SendEmail() {
     job_posting: ''
   });
 
+
+
   const [mailMessage, setMailMessage] = useState('Dear recruiter_name,\n\nI hope this email finds you well. My name is user_name, and I am reaching out to follow up on the job application I submitted on submission_date for the job_title position. I am very interested in this opportunity and wanted to express my enthusiam for the role. \n\nI wanted to confirm that my application was received and inquire if there are any additional materials I can provide to support the review process. I have attached a copy of my resume for your convenience. I am excited about the prospect of contributing to company_name\'s mission and would be grateful for the chance to do so. \n\nThank you for considering my application, and I look forward to hearing from you soon. \n\nJob Posting: job_posting\n\nBest regards,\n\nuser_name');
 
   var mailMessageTemp =  `Dear ${values.recruiter_name},\n\nI hope this email finds you well. My name is ${values.user_name}, and I am reaching out to follow up on the job application I submitted on ${values.submission_date} for the ${values.job_title} position. I am very interested in this opportunity and wanted to express my enthusiam for the role. \n\nI wanted to confirm that my application was received and inquire if there are any additional materials I can provide to support the review process. I have attached a copy of my resume for your convenience. I am excited about the prospect of contributing to ${values.company_name}\'s mission and would be grateful for the chance to do so. \n\nThank you for considering my application, and I look forward to hearing from you soon. \n\nJob Posting: ${values.job_posting}\n\nBest regards,\n\n${values.user_name}`
 
   const [file, setFile] = useState(null);
 
-  // chrome.webRequest.onBeforeRequest.addListener(
-  //   function(details) {
-  //     // return {cancel: details.url.indexOf("://www.evil.com/") != -1};
-  //     console.log(details)
-  //   },
-  //   {urls: ["<all_urls>"]},
-  //   ["blocking"]
-  // );
+  useEffect(() => {
+      chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+      setValues({
+        ...values,
+        job_posting : request.url,
+        company_name : request.company_name,
+        submission_date : request.current_date
+      })
+      });
+  }, []);
+
+  function scrapeInfoFromPage (tab) {
+
+    // get url
+    let url = tab.url;
+
+    // get company's name
+    const blocks = url.replace(/^(https?:\/\/)?(www\.)?/i, '').split('.');
+    let domain = blocks[0];
+    if (blocks.length > 1) {
+      domain = blocks[blocks.length - 2]
+    }
+    const company_name = domain.charAt(0).toUpperCase() + domain.slice(1);
+
+    // get current date
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    const current_date = mm + '/' + dd + '/' + yyyy;
+
+    chrome.runtime.sendMessage({url, company_name, current_date})
+  } 
+
+  const handleScrape = async () => {
+
+    // get tab
+    let [tab] = await chrome.tabs.query({
+        active: true,
+        currentWindow: true
+    });
+
+
+    chrome.scripting.executeScript({
+        target: {tabId: tab.id},
+        func: scrapeInfoFromPage,
+        args: [tab]
+    });
+  }
+
+
 
   const handleChange = event => {
     setValues({
@@ -84,6 +131,7 @@ function SendEmail() {
 
   return (
     <form className="m-4 p-4" onSubmit={handleSubmit}>
+       <button className='hover:bg-stone-700' type="button" onClick={handleScrape}>Scrape info from website</button>
       <div className='mb-2'>
         <label className="m-1 font-poppins" htmlFor="user_name">Your Name:</label>
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="user_name" name="user_name" value={values.user_name} onChange={handleChange} />
