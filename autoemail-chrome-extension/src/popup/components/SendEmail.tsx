@@ -137,30 +137,31 @@ function SendEmail() {
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="user_name" name="user_name" value={values.user_name} onChange={handleChange} />
       </div>
       <div className='mb-2'>
-        <label className="m-1 font-poppins" htmlFor="recruiter_name">Recruiter's Name:</label>
+        <label className="m-1 font-poppins" htmlFor="recruiter_name">Receiver's Name:</label>
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="recruiter_name" name="recruiter_name" value={values.recruiter_name} onChange={handleChange} />
+      </div>
+      <div className='mb-2'>
+        <label className="font-poppins w-[100px] m-1" htmlFor="recruiter_email">Receiver's Email:</label>
+        <input className="ml-8 w-60 rounded-full text-black" type="email" id="recruiter_email" name="recruiter_email" value={values.recruiter_email} onChange={handleChange} />
       </div>
       <div className='mb-2'>
         <label className="m-1 font-poppins" htmlFor="company_name">Company Name:</label>
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="company_name" name="company_name" value={values.company_name} onChange={handleChange} />
       </div>
       <div className='mb-2'>
-        <label className="m-1 font-poppins" htmlFor="submission_date">Submission date:</label>
-        <input className="ml-7 w-60 rounded-full text-black" type="text" id="submission_date" name="submission_date" value={values.submission_date} onChange={handleChange} placeholder="in form of mm/dd/yyyy"/>
-      </div>
-      <div className='mb-2'>
         <label className="m-1 font-poppins" htmlFor="job_title">Job Title:</label>
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="job_title" name="job_title" value={values.job_title} onChange={handleChange} />
       </div>
       <div className='mb-2'>
-        <label className="m-1 font-poppins" htmlFor="job_posting">Job Posting:</label>
+        <label className="m-1 font-poppins" htmlFor="job_posting">Job Posting URL:</label>
         <input className="ml-7 w-60 rounded-full text-black" type="text" id="job_posting" name="job_posting" value={values.job_posting} onChange={handleChange} 
         placeholder='Input the job posting link'/>
       </div>
-      <div>
-        <label className="font-poppins w-[100px] m-1" htmlFor="recruiter_email">Email:</label>
-        <input className="ml-8 w-60 rounded-full text-black" type="email" id="recruiter_email" name="recruiter_email" value={values.recruiter_email} onChange={handleChange} />
+      <div className='mb-2'>
+        <label className="m-1 font-poppins" htmlFor="submission_date">Submission date:</label>
+        <input className="ml-7 w-60 rounded-full text-black" type="text" id="submission_date" name="submission_date" value={values.submission_date} onChange={handleChange} placeholder="in form of mm/dd/yyyy"/>
       </div>
+
       <div>
         <label className="font-poppins w-[100px] m-1" htmlFor="Subject">Subject:</label>
         <input className="ml-4 w-60 rounded-full text-black" type="subject" id="subject" name="subject" value={values.subject} onChange={handleChange} />
